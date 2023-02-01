@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import HomeGuest from "./components/HomeGuest";
 
-function ExampleComponent() {
+function Main() {
     return (
-        <div>
-            <h1>This is our app!</h1>
-            <p>The sky is blue</p>
-        </div>
+        <>
+            <Header />
+            <HomeGuest />
+            <Footer />
+        </>
     )
 }
 
 const root = ReactDOM.createRoot(document.querySelector("#app"));
-root.render(<ExampleComponent/>);
+root.render(<Main/>);
